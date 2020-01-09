@@ -1,0 +1,102 @@
+input[type=text], input[type=email] {
+    width: 80%;
+}
+
+fieldset#sexo {
+    width: 150px;
+}
+
+.info {
+
+    color: #008040;
+    border: 1px solid #008040;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #C4FFE1;
+    font-size: 14px;
+}
+
+.borda {
+    max-width: 780px;
+    box-shadow: 5px 5px 10px #000;
+    padding: 30px;
+    margin-right: 30px;
+    background-color: white;
+}
+
+.borda h1{
+    margin-top: 0;
+}
+
+.linha,
+.coluna {
+    box-sizing: border-box;
+}
+
+    .linha:before,
+    .linha:after {
+        content: " ";
+        display: table;
+    }
+
+    .linha:after {
+        clear: both;
+    }
+
+.linha {
+    margin-bottom: 10px;
+}
+
+.coluna {
+    position: relative;
+    float: left;
+}
+
+.col-1 {
+    width: 6.86666666667%;
+}
+
+.col-2 {
+    width: 15.3333333333%;
+}
+
+.col-3 {
+    width: 23.8%;
+}
+
+.col-4 {
+    width: 32.2666666667%;
+}
+
+.col-5 {
+    width: 40.7333333333%;
+}
+
+.col-6 {
+    width: 49.2%;
+}
+
+.col-7 {
+    width: 57.6666666667%;
+}
+
+.col-8 {
+    width: 66.1333333333%;
+}
+
+.col-9 {
+    width: 74.6%;
+}
+
+.col-10 {
+    width: 83.0666666667%;
+}
+
+.col-11 {
+    width: 91.5333333333%;
+}
+
+.col-12 {
+    width: 100%;
+    margin-left: 0;
+}

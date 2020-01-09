@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>ABC Tecnologia - Contato</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>Entre em Contato conosco</h1>
+<html>
+
+<head>
+    <title>ABC Tecnologia - Contato</title>
+    <meta charset="UTF-8" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/form.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container borda">
+        <h1>Entre em contato conosco</h1>
         <header>
             <p>
                 <ol>
@@ -17,28 +22,38 @@
             </p>
             <p>Sinta-se à vontade para entrar em contato</p>
         </header>
-        <form action="contatoOk.html" method="POST">
-            <div>
-                <label for="nome">Seu Nome:</label>
-                <input type="text" name="nome" id="nome" required="required" autofocus="autofocus"/>
+
+        <form id="formulario" action="contatoOK.html" method="post">
+            <div class="linha">
+                <label class="coluna col-2" for="nome">Seu nome:</label>
+                <div class="col-10">
+                    <input type="text" id="nome" name="nome" required="required" />
+                </div>
+            </div>
+            <div class="linha">
+                <label class="coluna col-2" for="telefone">Seu telefone:</label>
+                <div class="col-10">
+                    <input type="tel" id="telefone" name="telefone" />
+                </div>
+            </div>
+            <div class="linha">
+                <label class="coluna col-2" for="email">Seu email:</label>
+                <div class="col-10">
+                    <input type="email" id="email" name="email" required="required" />
+                </div>
+            </div>
+            <div class="linha">
+                <label class="coluna col-2" for="assunto">Assunto:</label>
+                <div class="col-10">
+                    <textarea rows="10" cols="50" id="assunto" name="assunto"></textarea>
+                </div>
             </div>
 
-            <div>
-                <label for="telefone">Seu Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required="required"/>
+            <div class="linha">
+                <input type="submit" value="Enviar" id="enviarContato" />
             </div>
+        </form>
+    </div>
+</body>
 
-            <div>
-                <label for="email">Seu Email:</label>
-                <input type="email" id="email" name="email" required="required"/>
-            </div>
-
-            <div>
-                <label for="assunto">Assunto:</label>
-                <textarea rows="10" cols="50" id="assunto" name="assunto"></textarea>
-            </div>
-
-            <input id="btnEnviar" type="button" value="Enviar"/>
-        </form> 
-    </body>
 </html>

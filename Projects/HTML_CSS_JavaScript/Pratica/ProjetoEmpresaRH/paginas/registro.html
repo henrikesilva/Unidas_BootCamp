@@ -1,60 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>ABC Tecnologia - Registro de Vaga</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
+<html>
+
+<head>
+    <title>ABC Tecnologia - Registro de Vaga</title>
+    <meta charset="UTF-8" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/form.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container borda">
         <h1>Registro do Candidato</h1>
-        <form action="./registroOk.html" method="POST">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required="required">
+        <form action="./registroOK.html" method="POST">
+            <div class="linha">
+                <label for="nome" class="coluna col-2">Nome:</label>
+                <div class="col-10">
+                    <input type="text" id="nome" name="nome" required="required" autofocus="autofocus" />
+                </div>
             </div>
 
-            <div>
-                <label for="data">Data de Nascimento:</label>
-                <input type="date" id="data" name="data" required="required">
+            <div class="linha">
+                <label for="data" class="coluna col-2">Data de Nascimento:</label>
+                <div class="col-10">
+                    <input type="date" id="data" name="data" required="required" />
+                </div>
             </div>
 
-            <div>
-                <fieldset id="sexo">
-                    <legend>Sexo:</legend>
-                    <input type="radio" id="masculino" name="sexo" value="masculino">Masculino<br />
-                    <input type="radio" id="feminino" name="sexo" value="feminino">Feminino
-                </fieldset>
+            <div class="linha">
+                <div class="col-12">
+                    <fieldset id="sexo">
+                        <legend>Sexo:</legend>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">Masculino<br />
+                        <input type="radio" id="feminino" name="sexo" value="feminino">Feminino
+                    </fieldset>
+                </div>
             </div>
 
-            <div>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required="required" />
+            <div class="linha">
+                <label for="telefone" class="coluna col-2">Telefone:</label>
+                <div class="col-10">
+                    <input type="tel" id="telefone" name="telefone" required="required" />
+                </div>
             </div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required="required" />
+            <div class="linha">
+                <label for="email" class="coluna col-2">Email:</label>
+                <div class="col-10">
+                    <input type="email" id="email" name="email" required="required" />
+                </div>
             </div>
 
-            <div>
-                <label>Tipo de Vaga:</label>
+            <div class="linha">
+                <label class="coluna col-2">Tipo de Vaga:</label>
 
-                <div>
+                <div class="col-10">
                     <input type="radio" id="desenv" name="tipo" value="desenv" checked="checked">Desenvolvimento
                     <input type="radio" id="negocio" name="tipo" value="negocio">Negócios
                 </div>
             </div>
 
-            <div>
-                <label for="vaga">Vaga desejada:</label>
-                <select id="vaga" name="vaga">
-                    <option value="1">Administrador de Banco de Dados</option>
-                    <option value="2">Analista de Sistemas</option>
-                    <option value="3">Web Designer</option>
-                    <option value="4">Programador Java</option>
-                </select>
+            <div class="linha">
+                <label for="vaga" class="coluna col-2">Vaga desejada:</label>
+                <div class="col-10">
+                    <select id="vaga" name="vaga">
+                        <option value="-1">Selecione a vaga desejada</option>
+                        <option value="1">Administrador de Banco de Dados</option>
+                        <option value="2">Analista de Sistemas</option>
+                        <option value="3">Web Designer</option>
+                        <option value="4">Programador Java</option>
+                    </select>
+                </div>
             </div>
 
             <input id="btnEnviar" type="button" value="Enviar" />
-        </form> 
-    </body>
+        </form>
+    </div>
+</body>
+
 </html>
