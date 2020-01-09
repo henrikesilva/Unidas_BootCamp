@@ -30,3 +30,13 @@ nav {
 .menu li a:hover {
     color: #90EE90;
 }
+
+@media screen and (max-width: 768px){
+    .menu li{
+        float: none;
+    }
+
+    .menu li a{
+        text-align: center;
+    }
+}

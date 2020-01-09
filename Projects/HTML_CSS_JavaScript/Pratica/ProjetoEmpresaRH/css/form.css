@@ -6,6 +6,14 @@ fieldset#sexo {
     width: 150px;
 }
 
+textarea{
+    width: 100%;
+}
+
+fieldset{
+    width: 80%;
+}
+
 .info {
 
     color: #008040;
@@ -99,4 +107,38 @@ fieldset#sexo {
 .col-12 {
     width: 100%;
     margin-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        float: none;
+        width: auto;
+    }
+
+    .coluna + .coluna {
+        margin-left: 0;
+    }
+
+    .linha {
+        margin-bottom: 0;
+    }
+
+    .coluna {
+        margin-bottom: 10px;
+    }
+
+    .linha:last-child .coluna:last-child {
+        margin-bottom: 0;
+    }
 }
