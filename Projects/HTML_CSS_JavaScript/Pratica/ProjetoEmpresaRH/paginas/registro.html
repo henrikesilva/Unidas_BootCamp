@@ -12,7 +12,7 @@
 <body>
     <div class="container borda">
         <h1>Registro do Candidato</h1>
-        <form action="./registroOK.html" method="POST">
+        <form id="formularioRegistro" action="./registroOK.html" method="POST">
             <div class="linha">
                 <label for="nome" class="coluna col-2">Nome:</label>
                 <div class="col-10">
@@ -55,7 +55,7 @@
                 <label class="coluna col-2">Tipo de Vaga:</label>
 
                 <div class="col-10">
-                    <input type="radio" id="desenv" name="tipo" value="desenv" checked="checked">Desenvolvimento
+                    <input type="radio" id="desenv" name="tipo" value="desenv">Desenvolvimento
                     <input type="radio" id="negocio" name="tipo" value="negocio">Negócios
                 </div>
             </div>
@@ -73,9 +73,10 @@
                 </div>
             </div>
 
-            <input id="btnEnviar" type="button" value="Enviar" />
+            <input type="submit" value="Enviar" class="enviar" />
         </form>
     </div>
+    <script src="../scripts/validacao-form.js"></script>
 </body>
 
 </html>
