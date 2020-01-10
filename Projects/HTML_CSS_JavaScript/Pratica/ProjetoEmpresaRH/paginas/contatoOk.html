@@ -5,11 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body onload="exibirmensagem()">
         <h1>Recebemos seu contato, muito obrigado.</h1>
         <div class="container">
-            <div style="background: yellow;border: 1px solid #cccccc; padding: 10px;" contextmenu="voltarMenu">
+            <h3>Contato adicionado com Sucesso</h3>
+            <p>Clique com o direito para acessar o menu</p>
+            <div id="mensagem" class="info" contextmenu="voltarMenu">
                 <menu type="context" id="voltarMenu">
                     <menuitem label="Voltar para contato" onclick="location.href='contato.html';">
                         Voltar para contato
@@ -21,5 +25,7 @@
                 <a href="../index.html">Voltar</a>
             </section>
         </div>
+
+        <script src="../scripts/sucesso-controls.js"></script>
     </body>
 </html>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/form.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,8 +56,8 @@
                 <label class="coluna col-2">Tipo de Vaga:</label>
 
                 <div class="col-10">
-                    <input type="radio" id="desenv" name="tipo" value="desenv">Desenvolvimento
-                    <input type="radio" id="negocio" name="tipo" value="negocio">Negócios
+                    <input type="radio" id="1" name="tipo" value="desenv">Desenvolvimento
+                    <input type="radio" id="2" name="tipo" value="negocio">Negócios
                 </div>
             </div>
 
@@ -65,18 +66,15 @@
                 <div class="col-10">
                     <select id="vaga" name="vaga">
                         <option value="-1">Selecione a vaga desejada</option>
-                        <option value="1">Administrador de Banco de Dados</option>
-                        <option value="2">Analista de Sistemas</option>
-                        <option value="3">Web Designer</option>
-                        <option value="4">Programador Java</option>
                     </select>
                 </div>
-            </div>
+            </div>   
 
             <input type="submit" value="Enviar" class="enviar" />
         </form>
     </div>
     <script src="../scripts/validacao-form.js"></script>
+    <script src="../scripts/carrega-vagas.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ fieldset{
 }
 
 .info {
-
+    display: none;
     color: #008040;
     border: 1px solid #008040;
     border-radius: 5px;
