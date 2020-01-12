@@ -3,6 +3,7 @@
     <head>
         <title>Cadastro de Currículos</title>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./css/estilos.css">
     </head>
     
     <body>
@@ -22,7 +23,7 @@
                     <label for="data">Data de nascimento</label>
                     <input type="date" id="data" name="data" required="required"/>
                 </div>
-                <div>
+                <div class="sexo">
                     <legend>Sexo:</legend>
                     <input type="radio" id="masculino" name="sexo" value="masculino" required="required">Masculino<br />
                     <input type="radio" id="feminino" name="sexo" value="feminino" required="required">Feminino
@@ -91,7 +92,6 @@
             <fieldset>
                 <legend>Experiência Profissional</legend>
                 <div>
-                    <label for="">Experiência Profissional</label>
                     <textarea rows="10" cols="50" id="exp" name="exp"></textarea>
                 </div>
             </fieldset>

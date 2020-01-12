@@ -1,0 +1,26 @@
+body{
+    background-color: #cccccc;
+}
+
+fieldset{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    margin-bottom: 5px;
+}
+
+input{
+    width: 220px;
+}
+
+select {
+    width: 220px;
+}
+
+.sexo input{
+    width: 20px;
+}
+
