@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SitePessoal.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,31 @@ namespace SitePessoal.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Concluido = false;
+
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Salvar(Contato contato)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(contato.Email)
+                    || string.IsNullOrEmpty(contato.Nome)
+                    || string.IsNullOrEmpty(contato.Mensagem))
+                {
+                    throw new ArgumentException("Favor preencher todo o formulário");
+                }
+
+                ViewBag.Concluido = true;
+            }
+            catch(Exception ex)
+            {
+                ViewBag.ErroMsg = ex.Message;
+                ViewBag.Concluido = false;
+            }
+            return View("Index");
         }
     }
 }
