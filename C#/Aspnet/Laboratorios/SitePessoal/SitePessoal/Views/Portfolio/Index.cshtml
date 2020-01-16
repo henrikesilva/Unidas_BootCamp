@@ -1,0 +1,14 @@
+﻿@{ 
+    ViewBag.Title = "Portfólio";
+}
+
+<h2>Portfólio</h2>
+
+<h5 class="danger">@ViewBag.ErroMsg</h5>
+
+@foreach(var arquivo in ViewBag.listaArquivos)
+{
+    <img src="@arquivo" class="img-portfolio" />
+}
+
+<div class="clearfix"></div>
