@@ -16,11 +16,6 @@ namespace SitePessoal.Controllers
                 string pathVirtual = "~/Content/Imagens/";
                 string pathFisico = Server.MapPath(pathVirtual);
 
-                if (string.IsNullOrEmpty(pathFisico))
-                {
-                    throw new FileNotFoundException();
-                }
-
                 string[] arquivos = Directory.GetFiles(pathFisico);
                 if (arquivos.Count() == 0)
                 {

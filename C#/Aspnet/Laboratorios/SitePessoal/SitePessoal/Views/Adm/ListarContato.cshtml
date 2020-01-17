@@ -1,0 +1,22 @@
+﻿@{ 
+    ViewBag.Title = "Contatos Recebidos";
+}
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Data</th>
+        <th>Mensagem</th>
+    </tr>
+
+    @foreach(var contato in ViewBag.Contatos)
+    {
+    <tr>
+        <td>@contato.Nome</td>
+        <td>@contato.Email</td>
+        <td>@contato.Data</td>
+        <td>@contato.Mensagem</td>
+    </tr>
+    }
+</table>
