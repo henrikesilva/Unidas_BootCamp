@@ -1,0 +1,7 @@
+-- Primeira Instrução SQL
+
+/*
+	SELECIONANDO A DATA DO SERVIDOR
+*/
+
+SELECT GETDATE();
